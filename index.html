@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket Travel Indonesia</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-plane"></i> Travel Indo
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#destinations" class="nav-link">Destinasi</a></li>
+                <li><a href="#book" class="nav-link">Pesan Tiket</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Jelajahi Indonesia dengan Tiket Travel Terbaik</h1>
+            <p>Temukan destinasi impian Anda dari Bali hingga Raja Ampat. Nikmati pengalaman perjalanan yang tak terlupakan.</p>
+            <button class="btn-primary" onclick="scrollToSection('book')">
+                <i class="fas fa-search"></i> Cari Tiket Sekarang
+            </button>
+        </div>
+    </section>
+
+    <section id="book" class="search-section">
+        <div class="container">
+            <h2>Cari Tiket Travel Anda</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="from"><i class="fas fa-map-marker-alt"></i> Dari</label>
+                    <input type="text" placeholder="e.g., Jakarta" id="from">
+                </div>
+                <div class="form-group">
+                    <label for="to"><i class="fas fa-map-marker-alt"></i> Ke</label>
+                    <input type="text" placeholder="e.g., Bali" id="to">
+                </div>
+                <div class="form-group">
+                    <label for="date"><i class="fas fa-calendar-alt"></i> Tanggal</label>
+                    <input type="date" id="date">
+                </div>
+                <button type="submit" class="btn-secondary">
+                    <i class="fas fa-search"></i> Cari
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Destinasi Populer di Indonesia</h2>
+            <div class="destination-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250?text=Bali+Beach" alt="Bali">
+                    <div class="card-content">
+                        <h3>Bali</h3>
+                        <p>Pantai indah, budaya yang kaya, dan petualangan tak terlupakan.</p>
+                        <button class="btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250?text=Raja+Ampat" alt="Raja Ampat">
+                    <div class="card-content">
+                        <h3>Raja Ampat</h3>
+                        <p>Surga bawah laut dengan keanekaragaman hayati luar biasa.</p>
+                        <button class="btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250?text=Yogyakarta" alt="Yogyakarta">
+                    <div class="card-content">
+                        <h3>Yogyakarta</h3>
+                        <p>Warisan budaya, candi megah, dan gunung berapi yang menakjubkan.</p>
+                        <button class="btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250?text=Lombok" alt="Lombok">
+                    <div class="card-content">
+                        <h3>Lombok</h3>
+                        <p>Pantai eksotis, gunung Rinjani, dan tradisi Sasak yang autentik.</p>
+                        <button class="btn-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel Indo</h3>
+                    <p>Jelajahi keindahan Indonesia dengan tiket travel terbaik. Kami siap membantu perjalanan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-envelope"></i> info@travelindo.com</p>
+                    <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2023 Travel Indo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
